@@ -1,0 +1,235 @@
+.main-background-wrapper {
+  padding: 20vh 0 0 0;
+  max-width: 1920px;
+  width: 100%;
+  justify-content: center; }
+  @media screen and (max-width: 1800px) {
+    .main-background-wrapper {
+      padding: 14vh 0 0 0; } }
+  @media screen and (max-width: 1620px) {
+    .main-background-wrapper {
+      padding: 18vh 0 0 0; } }
+  @media screen and (max-width: 1400px) {
+    .main-background-wrapper {
+      padding: 14vh 0 0 0; } }
+  @media screen and (max-width: 1100px) {
+    .main-background-wrapper {
+      display: flex;
+      flex-direction: column;
+      padding: 0; } }
+
+.main-background-img {
+  max-width: 1920px;
+  padding: 0 !important;
+  margin: 0;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("../../imgs/needle.jpg");
+  filter: blur(7px); }
+
+.hello-container {
+  max-width: 1920px;
+  padding: 0 !important;
+  margin: 0;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+.hello-logo {
+  padding-top: 30px;
+  padding-right: 45px; }
+  @media screen and (max-width: 400px) {
+    .hello-logo {
+      width: 300px;
+      padding-right: 0; } }
+  @media screen and (max-width: 350px) {
+    .hello-logo {
+      width: 270px;
+      padding-right: 0; } }
+
+.introduction-container {
+  text-align: center;
+  width: 100%;
+  max-width: 1920px !important;
+  position: relative;
+  padding: 0;
+  z-index: 2;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("../../imgs/needle.jpg");
+  background-size: 100%;
+  background-position: center 81%; }
+  @media screen and (max-width: 1100px) {
+    .introduction-container {
+      background-image: none; } }
+
+.introduction-container-filter {
+  background-color: rgba(25, 230, 140, 0.6);
+  height: 100%;
+  width: 100%;
+  padding: 30px 0 0 0; }
+  @media screen and (max-width: 1100px) {
+    .introduction-container-filter {
+      background-color: rgba(25, 230, 140, 0);
+      display: flex;
+      -webkit-flex-direction: column;
+      flex-direction: column;
+      justify-content: center; } }
+
+.top-container-bg-img {
+  z-index: 1;
+  position: absolute !important;
+  top: 33vh;
+  width: 100%;
+  height: 33vh;
+  max-width: 1920px !important;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("../../imgs/needle.jpg"); }
+
+.hello-filter {
+  width: 100%;
+  height: 100%;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(26, 53, 38, 0.71)), to(rgba(80, 155, 245, 0.7)));
+  background-image: linear-gradient(90deg, rgba(33, 45, 53, 0.6), rgba(80, 155, 245, 0.61));
+  margin-left: 0 !important;
+  margin-right: 0 !important; }
+
+.large-header {
+  font-family: "Montserrat ExtraBold", SansSerif;
+  display: block;
+  width: 100%;
+  font-size: 46px;
+  font-weight: 900; }
+
+.introduction-txt {
+  font-size: 24px;
+  padding: 60px 0 0 0; }
+
+.introduction__instructions {
+  padding: 60px; }
+  @media screen and (max-width: 1000px) {
+    .introduction__instructions {
+      padding: 30px; } }
+  .introduction__instructions li {
+    list-style-type: none;
+    min-width: 320px; }
+  .introduction__instructions li div {
+    padding: 0 0 5px; }
+
+@media screen and (max-width: 1200px) {
+  .introduction__instructions li {
+    width: 33%;
+    min-width: 150px; }
+
+  .introduction__instructions ul li span {
+    font-size: 14px; }
+
+  .introduction__instructions ul li h2 {
+    font-size: 14px; }
+
+  .introduction__instructions ul li div {
+    font-size: 14px; } }
+@media screen and (max-width: 768px) {
+  .introduction__instructions {
+    max-width: 100%; }
+
+  .introduction__instructions li {
+    min-width: 120px; } }
+@media screen and (max-width: 620px) {
+  .introduction__instructions ul {
+    width: 100%;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+
+  .introduction__instructions li {
+    width: 64%; }
+
+  .introduction__instructions__step-0__num span br {
+    display: none; } }
+@media screen and (max-width: 430px) {
+  .introduction__instructions li {
+    width: 100%; } }
+.introduction__instructions__header {
+  font-family: "Montserrat", Sans-serif;
+  font-size: 18px;
+  font-weight: 700; }
+
+.introduction__instructions__step-0 {
+  font-family: "Roboto", Sans-serif; }
+
+.introduction__instructions__step-1 {
+  font-family: "Roboto", Sans-serif; }
+
+.introduction__instructions__step-2 {
+  font-family: "Roboto", Sans-serif; }
+
+.introduction__instructions__step-0 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #ffc864;
+  animation-name: example;
+  animation-duration: 6s;
+  animation-iteration-count: infinite; }
+  .introduction__instructions__step-0 span {
+    font-size: 18px; }
+
+@keyframes example {
+  0% {
+    transform: rotate(0deg) translate(0px); }
+  89% {
+    transform: rotate(0deg) translate(0px); }
+  90% {
+    transform: rotate(1deg) translate(3px); }
+  92% {
+    transform: rotate(-1deg) translate(-3px); }
+  94% {
+    transform: rotate(1deg) translate(3px); }
+  96% {
+    transform: rotate(-1deg) translate(-3px); } }
+.introduction__instructions__step-1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 18px; }
+
+.introduction__instructions__step-2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 18px; }
+
+.introduction__instructions__step-0__num {
+  font-size: 62px;
+  float: left;
+  padding: 15px;
+  color: #ffc864;
+  font-family: "Roboto", Sans-serif; }
+
+.introduction__instructions__step-1__num {
+  font-size: 36px;
+  float: left;
+  padding: 15px;
+  font-family: "Roboto", Sans-serif; }
+
+.introduction__instructions__step-2__num {
+  font-size: 36px;
+  float: left;
+  padding: 15px;
+  font-family: "Roboto", Sans-serif; }
+
+.spotify-login {
+  padding-top: 15px; }
+
+/*# sourceMappingURL=Hello.css.map */

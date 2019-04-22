@@ -1,0 +1,27 @@
+/*
+.dropdown-options-wrapper{
+    height: 0;
+    width: 0px;
+    margin:0;
+    padding:0;
+}*/
+.playlist-btn__filter .dropdown-menu{
+    width:400px;/*temporary*/
+    padding: 30px;
+}
+.playlist-btn__filter .dropdown-menu .options .container{
+    padding: 0;
+}
+.playlist-btn__filter__upper-txt{
+    font-family: "Montserrat", Sans-serif;
+    font-weight: 600;
+    color: #363715;
+    padding-bottom: 15px;
+}
+.playlist-btn__filter .dropdown-menu label{
+    color: #363715;
+    font-size: 14px;
+}
+.btn-success:not(:disabled):not(.disabled).active, .btn-success:not(:disabled):not(.disabled):active, .show > .btn-success.dropdown-toggle{
+    color: #363715!important;
+}

@@ -1,0 +1,24 @@
+.introduction-container{
+    padding: 5% 0;
+    display: flex;
+    flex-direction: column;
+}
+.album-imgs li{
+    list-style-type: none;
+}
+.functional-main-wrapper{
+    padding-top: 60px;
+}
+@media screen and (max-width: 736px){
+    .functional-main-wrapper{
+        padding-top: 15px;
+    }
+}
+.playlist{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.functional-main-wrapper{
+
+}

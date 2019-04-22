@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,mBAAmB;EACjB,SAAS,EAAE,IAAI",
+"sources": ["periodBtns.scss"],
+"names": [],
+"file": "periodBtns.css"
+}
