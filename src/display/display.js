@@ -14,6 +14,9 @@ import '../bootstrap/bootstrap.min.css'
 
 const spotifyWebApi = new Spotify();
 
+function random(min, max){
+    return Math.floor(Math.random() * (max - min +1) + min);
+}
 
 class Display extends Component {
     constructor(props) {
@@ -87,7 +90,7 @@ class Display extends Component {
     }
 
     randomiser = (min, max) => {
-        return Math.floor(Math.random() * (max - min + 1) + min);
+        return Math.floor(Math.random(min, max) * (max - min + 1) + min);
     };
 
     /*Promise*/
@@ -217,7 +220,7 @@ class Display extends Component {
                 return item[AppStore.recommendedPlaylistNum].uri
             })
         };
-        spotifyWebApi.createPlaylist(AppStore.user.id, {name: "Ttttest"})
+        spotifyWebApi.createPlaylist(AppStore.user.id, {name: "COLANDER-"+random(0, 99)})
             .then((data) => {
                 spotifyWebApi.addTracksToPlaylist(data.id, getRecommendedURIs())
                 .then(()=>{

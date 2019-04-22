@@ -22,7 +22,7 @@ function Hello() {
                         <Row as="ul">
                             <Col as="li" lg="4" className="justify-content-left introduction__instructions__step-0">
                                 <h3 className="introduction__instructions__step-0__num">1</h3>
-                                <a href={"https://colander11.herokuapp.com/login"}>
+                                <a href={"http://colander11.herokuapp.com/login"}>
                                     <div><span>Click here to<br/> authorize with</span><br/>
                                         <img src={require('../../imgs/Spotify_Logo_RGB_White.png')} alt="SPOTIFY"
                                              width={120} className="spotify-login"/>
