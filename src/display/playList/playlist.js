@@ -20,7 +20,11 @@ function Playlist(props) {
             <Row className="justify-content-around playlist__upper-txt__wrapper">
                 <Col lg="10" as="div" className="playlist__upper-txt">
                     {AppStore.recommendedTracks.length===0&&<h3 className="playlist__upper-txt__hello">Hello, {AppStore.user.name}!</h3>}
-                    <span className="playlist__upper-txt__instruction">Push FILTER to set your searching parameters and click GENERATE to make new random Spotify playlist!</span>
+                    <span className="playlist__upper-txt__instruction">
+                        {AppStore.currentAction.type === "showTopSongs"?
+                            <h3>Push FILTER to set your searching parameters and click GENERATE to make new random Spotify playlist!</h3>
+                            :<h3>Your playlist is ready!</h3>
+                        }</span>
                 </Col>
             </Row>
             {AppStore.currentAction.type === 'showTopSongs'

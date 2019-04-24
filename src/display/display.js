@@ -193,6 +193,11 @@ class Display extends Component {
                     }
                 })
         }
+        this.generateName()
+    }
+
+    generateName(){
+        AppStore.listRandomName = 'COLANDER-'+random(0, 99);
     }
 
     switchPlaylist() {
@@ -220,7 +225,7 @@ class Display extends Component {
                 return item[AppStore.recommendedPlaylistNum].uri
             })
         };
-        spotifyWebApi.createPlaylist(AppStore.user.id, {name: "COLANDER-"+random(0, 99)})
+        spotifyWebApi.createPlaylist(AppStore.user.id, {name: AppStore.listRandomName})
             .then((data) => {
                 spotifyWebApi.addTracksToPlaylist(data.id, getRecommendedURIs())
                 .then(()=>{
@@ -242,6 +247,7 @@ class Display extends Component {
     }
 
     render() {
+
         return (
             <>
             {AppStore.currentAction.loading === true && <Loading/>}

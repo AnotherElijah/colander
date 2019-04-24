@@ -10,7 +10,6 @@ function Back (props){
         AppStore.recommendedTracks = [];
         AppStore.recommendedPlaylistNum = 0;
         AppStore.exceptFromRecommends = [];
-        AppStore.recommendedTracks = [];
         props.parentState();
     }
     return (
@@ -63,6 +62,10 @@ class Player extends Component {
     render() {
         return (
             <div className="playlist__player__wrapper">
+                <span className="playlist__player__description">
+                    Your playlist name: <span className="playlist__player__description__md-txt">{AppStore.listRandomName}</span><br />
+                    <span className="playlist__player__description__sm-txt">(You can change it in your Spotify App after upload)</span>
+                </span>
                 <div className="playlist__player">
                     <div className="playlist__player__interface">
                         <audio ref="audio" controls>

@@ -61,3 +61,12 @@
   color: #ffd17f!important;
   cursor: default;
 }
+.playlist__player__description{
+  padding: 0 0 15px;
+  .playlist__player__description__md-txt{
+    color: #ffc864;
+  }
+  .playlist__player__description__sm-txt{
+    font-size: 12px;
+  }
+}

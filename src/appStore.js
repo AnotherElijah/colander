@@ -20,7 +20,8 @@ const AppStore = {
     topSongsNoRepeats: [],
     recommendedTracks: [],
     recommendedPlaylistNum: 0,
-    exceptFromRecommends: []
+    exceptFromRecommends: [],
+    listRandomName: ''
 };
 
 export {AppStore};
