@@ -40,6 +40,12 @@
   background-image: url("../../imgs/needle.jpg");
   -webkit-filter: blur(7px);
   filter: blur(7px);
+  @media screen and (max-width: 1100px){
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    background-size: cover;
+    background-position: center;
+  }
 }
 
 .hello-container {

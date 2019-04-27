@@ -15,7 +15,7 @@ function Menu(props) {
     };
     return (
         <Col lg="2" md="2" sm="12" className="menu-wrapper-desktop">
-            <img src={require("../svgs/col-bl-logo.svg")} width={240} className="hello-logo"/>
+            <a href="http://colander-app.herokuapp.com"><img src={require("../svgs/col-bl-logo.svg")} width={240} className="hello-logo"/></a>
             <Nav className="mr-2 flex-column menu" variant="pills" aria-label="First group" as="ul">
                 <Col as="li" className="menu__item-wrapper">
                     <Nav.Item className="menu__item-0">
